@@ -35,3 +35,9 @@
 **Decision:** Maintain the upstream relationship while incrementally extracting a FoundUps spatial kernel.
 
 **Reason:** A wholesale rename would conceal licensing, data, security, monolith, and provider-coupling risks.
+
+## ADR-007: Release gates run in repository CI
+
+**Decision:** Clean install, production dependency audit, unit tests, production build, and browser tracking regression are required before changes enter `main`.
+
+**Reason:** Spatial rendering behavior requires a reproducible browser environment in addition to static and unit verification.
